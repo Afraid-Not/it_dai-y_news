@@ -1,0 +1,40 @@
+# Python / FastAPI
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+dist/
+*.egg-info/
+
+# Node / Next.js
+node_modules/
+.next/
+.env.local
+.env*.local
+.turbo/
+build/
+
+# SQLite
+*.db
+
+# AI / ML
+*.pt
+*.pth
+*.ckpt
+wandb/
+runs/
+eval_results/
+checkpoints/
+.forge-log
+
+# General
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+*.swp

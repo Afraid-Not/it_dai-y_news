@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(conda activate:*)",
+      "Bash(uvicorn main:app --reload --port 8000)",
+      "Bash(npm run:*)",
+      "Bash(curl -s http://localhost:8000/)",
+      "Bash(conda info:*)",
+      "Bash(C:/Users/pc/anaconda3/envs/it-daily-news/python.exe -m uvicorn main:app --reload --port 8000)",
+      "Bash(curl:*)",
+      "Bash(C:/Users/pc/anaconda3/envs/it-daily-news/python.exe -m json.tool)",
+      "Bash(C:/Users/pc/anaconda3/envs/it-daily-news/python.exe -c \"\nimport sqlite3\nconn = sqlite3.connect\\('D:/dev/it-daily-news/backend/news.db'\\)\ncur = conn.cursor\\(\\)\ncur.execute\\('SELECT id, title, category FROM news LIMIT 3'\\)\nfor row in cur.fetchall\\(\\):\n    print\\(row\\)\nconn.close\\(\\)\n\")",
+      "Bash(C:/Users/pc/anaconda3/envs/it-daily-news/python.exe -c \"\nimport sys\nprint\\('stdout encoding:', sys.stdout.encoding\\)\nprint\\('default encoding:', sys.getdefaultencoding\\(\\)\\)\nprint\\('filesystem encoding:', sys.getfilesystemencoding\\(\\)\\)\nimport locale\nprint\\('preferred encoding:', locale.getpreferredencoding\\(\\)\\)\n\")",
+      "Bash(C:/Users/pc/anaconda3/envs/it-daily-news/python.exe -c \"\nimport sqlite3\nconn = sqlite3.connect\\('D:/dev/it-daily-news/backend/news.db'\\)\nconn.text_factory = lambda b: b.decode\\('utf-8', errors='replace'\\)\ncur = conn.cursor\\(\\)\ncur.execute\\('SELECT id, title, category FROM news LIMIT 3'\\)\nfor row in cur.fetchall\\(\\):\n    print\\(repr\\(row\\)\\)\nconn.close\\(\\)\n\")",
+      "Bash(C:/Users/pc/anaconda3/envs/it-daily-news/python.exe -c \"\nimport sqlite3\nconn = sqlite3.connect\\('D:/dev/it-daily-news/backend/news.db'\\)\nconn.text_factory = bytes\ncur = conn.cursor\\(\\)\ncur.execute\\('SELECT title, category FROM news LIMIT 1'\\)\nrow = cur.fetchone\\(\\)\ntitle_bytes = row[0]\ncat_bytes = row[1]\nprint\\('title bytes:', title_bytes[:50]\\)\nprint\\('title decode utf-8:', title_bytes.decode\\('utf-8', errors='replace'\\)[:50]\\)\nprint\\('title decode cp949:', title_bytes.decode\\('cp949', errors='replace'\\)[:50]\\)\nprint\\('cat bytes:', cat_bytes\\)\nprint\\('cat decode cp949:', cat_bytes.decode\\('cp949', errors='replace'\\)\\)\nconn.close\\(\\)\n\")",
+      "Bash(PYTHONIOENCODING=utf-8 C:/Users/pc/anaconda3/envs/it-daily-news/python.exe -c \"\nimport sqlite3\nconn = sqlite3.connect\\('D:/dev/it-daily-news/backend/news.db'\\)\ncur = conn.cursor\\(\\)\ncur.execute\\('SELECT id, title, category FROM news LIMIT 3'\\)\nfor row in cur.fetchall\\(\\):\n    print\\(row\\)\nconn.close\\(\\)\n\")",
+      "Bash(PYTHONIOENCODING=utf-8 curl -s \"http://localhost:8000/api/news/?target_date=2026-03-24\")",
+      "Bash(C:/Users/pc/anaconda3/envs/it-daily-news/python.exe -c \":*)"
+    ]
+  }
+}
